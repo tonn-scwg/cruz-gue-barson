@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tourist attractions and landmarks</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    
+    
+        body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #0b2b16;
+      color: white;
+    }
+
+    
+    .top {
+      background-color: #08210f;
+      text-align: center;
+      padding: 18px 0;
+      font-size: 20px;
+      letter-spacing: 1px;
+      font-weight: 600;
+    }
+
+  
+    .bg {
+      background: url("bg.jfif")
+        center/cover no-repeat;
+      height: 420px;
+      position: relative;
+    }
+
+    .overlay {
+      background: rgba(0, 0, 0, 0.45);
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 0 20px;
+    }
+
+    .overlay h1 {
+      font-size: 36px;
+      font-weight: 700;
+      margin: 0;
+      letter-spacing: 1px;
+    }
+
+    .overlay p {
+      margin-top: 10px;
+      font-size: 18px;
+      font-weight: 300;
+      opacity: 0.9;
+    }
+    
+    .content-section {
+      padding: 40px;
+      max-width: 1400px; 
+      margin: 0 auto;
+      color: #dfeee4;
+    }
+    .navbar {
+  width: 100%;
+  background-color: #08210f;
+  padding: 18px 0;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.45);
+}
+
+.navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.navbar li {
+  display: inline-block;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #dfeee4;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  transition: 0.2s ease;
+}
+
+.navbar a:hover {
+  color: #a7d3b0;
+}
+
+
+.section-title {
+font-size: 28px;
+font-weight: 600;
+margin-bottom: 25px;
+color: #dfeee4;
+}
+
+   
+    .landmark-grid {
+      display: flex; 
+      flex-direction: column;
+    
+    }
+
+
+.landmark-box {
+display: contents;
+}
+
+  .landmark-box-wrapper {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  background-color: #123b22;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  margin-bottom: 25px; 
+
+  }
+
+  .landmark-box-wrapper:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.45);
+  }
+
+  .landmark-box-wrapper img {
+  width: 380px;
+height: 220px;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.4);
+  }
+
+  .landmark-info {
+  flex: 1;
+  color: #e8f5e9;
+  }
+
+  .landmark-info h2 {
+  margin-top: 0;
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 12px;
+  }
+
+  .landmark-info p {
+  line-height: 1.6;
+  text-align: justify;
+font-size: 15px;
+  }
+
+
+.sidebar {
+position: sticky;
+top: 20px;
+height: fit-content;
+background-color: #123b22;
+border-radius: 12px;
+padding: 20px;
+box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.sidebar h3 {
+color: #e8f5e9;
+font-size: 25px;
+margin-bottom: 14px;
+padding-bottom: 10px;
+border-bottom: 1px solid #415f61;
+}
+
+.sidebar p, .sidebar ul {
+font-size: 20px;
+line-height: 1.5;
+color: #dfeee4;
+}
+
+.sidebar ul {
+list-style: none;
+padding-left: 0;
+}
+
+.sidebar ul li {
+margin-bottom: 8px;
+}
+
+
+
+@media (max-width: 1024px) {
+
+  .navbar ul {
+    gap: 25px;
+    }
+
+  .navbar a {
+     font-size: 18px;
+  }
+
+  .restaurant-card,
+  .restaurant-card:nth-child(even) {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .restaurant-card img {
+    width: 100%;
+    height: auto;
+    }
+.content-section {
+grid-template-columns: 1fr;
+gap: 30px;
+}
+
+.sidebar {
+position: static;
+}
+
+.content-section {
+padding: 30px 20px;
+}
+
+
+.landmark-box-wrapper {
+flex-direction: column;
+text-align: center;
+padding: 20px;
+}
+
+.landmark-box-wrapper img {
+width: 100%;
+max-width: 380px;
+height: 200px;
+margin: 0 auto 15px auto;
+}
+
+.landmark-info {
+text-align: left;
+}
+}
+
+@media (max-width: 600px) {
+.top {
+font-size: 16px;
+}
+.overlay h1 {
+font-size: 28px;
+}
+.landmark-info h2 {
+font-size: 24px;
+}
+      .navbar {
+        padding: 14px 0;
+      }
+
+      .navbar ul {
+        flex-wrap: wrap;
+        gap: 15px;
+      }
+
+      .navbar a {
+        font-size: 16px;
+      }
+
+      .restaurant-card {
+        padding: 18px;
+      }
+
+      .restaurant-card img {
+        border-radius: 10px;
+      }
+}
+</style>
+</head>
+<body>
+  <header>
+    <div class="top">Cordillera Administrative Region</div>
+
+    <div class="bg">
+      <div class="overlay">
+        <h1>TOURIST ATTRACTIONS AND LANDMARKS</h1>
+        <p>Explore and Capture.</p>
+      </div>
+  </div>
+  </header>
+<nav class="navbar">
+  <ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Accomodations</a></li>
+    <li><a href="#">Cuisine</a></li>
+    <li><a href="#">Locations</a></li>
+    <li><a href="#">About us</a></li>
+  </ul>
+</nav>
+
+  <section class="content-section">
+
+<div>
+<h2 class="section-title">Featured Attractions</h2>
+
+<div class="landmark-grid">
+
+<div class="landmark-box">
+<div class="landmark-box-wrapper">
+<img src="coffin.webp" alt="Hanging Coffins of Sagada">
+<div class="landmark-info">
+<h2>Hanging Coffins of Sagada</h2>
+<p> The Hanging Coffins of Sagada are an example of a long-standing burial custom that the native Igorot people have followed for more than 2,000 years. According to this tradition, coffins are positioned inside caves or draped on cliff faces to bring the departed closer to the sky. Deep reverence for ancestors and a conviction in making the transition to the afterlife easier are reflected in this tradition.  </p>
+<p>Located at: Echo Valley, Sagada, Mountain Province, Philippines</p>
+</div>
+</div>
+</div>
+
+<div class="landmark-box">
+<div class="landmark-box-wrapper">
+<img src="stobosa.webp" alt="Colors of Stobosa">
+<div class="landmark-info">
+<h2>Colors of Stobosa</h2>
+<p> Also known as StoBoSa Hillside Homes Artwork, the sitios of Stonehill, Botiwtiw, and Sadjap are represented by the portmanteau Stobosa. The project covered an area of more than 18,000 square meters and entailed painting between 150 and 200 homes. The design turns the formerly boring hillside into a lively tourist destination with its expansive patterns of sunflowers and rainbows. </p>
+    <p>Located at: ELa Trinidad, Benguet, Philippines </p>
+</div>
+</div>
+</div>
+
+<div class="landmark-box">
+<div class="landmark-box-wrapper">
+<img src="cave.jpg" alt="Sumaguing Cave">
+<div class="landmark-info">
+<h2>Sumaguing Cave</h2>
+<p> The Sumaguing cave showcases multiple unique rock forms that have been sculpted over years ago. Spelunking enthusiasts frequently visit it because of its remarkable limestone formations, which include stalactites, stalagmites, and natural ponds.  </p>
+<p>Located at: Sagada, Mountain Province, Philippines</p>
+</div>
+</div>
+</div>
+
+<div class="landmark-box">
+<div class="landmark-box-wrapper">
+<img src="mt..webp" alt="Mt. Pigingan">
+<div class="landmark-info">
+<h2>Mt. Pigingan</h2>
+<p>  The Ibaloi word "Piging," which means "slanted," is the source of the name "Pigingan," which reflects the mountain's characteristic inclined profile. Mt. Pigingan provides hikers with a demanding and rewarding experience despite its comparatively small elevation. The trail offers expansive views of the nearby mountain ranges and river valleys due to its diverse terrain, which includes broad meadows, ridges, and steep ascents. </p>
+<p>Located at: Barangay Dalupirip, Itogon, Benguet, Philippines.</p>
+</div>
+</div>
+</div>
+
+<div class="landmark-box">
+<div class="landmark-box-wrapper">
+<img src="bluesoil.jpg" alt="Blue Soil Hills">
+<div class="landmark-info">
+<h2>Blue Soil Hills</h2>
+<p> The remarkable bluish-green tint of the Blue Soil Hills, a natural phenomenon surrounded by tall pine trees, provides visitors with a tranquil and surreal experience. The hills' complex ridges and folds, which resemble brain gyri, are reflected in the name "Kaman-utek," which means "like a brain" in the local dialect.  </p>
+<p>Located at:  Balili, Bontoc, Sagada, Mountain Province, Philippines</p>
+</div>
+</div>
+</div>
+
+
+
+</div>
+</div>
+
+<aside class="sidebar">
+<h3>About the Cordillera Region</h3>
+<p>The Cordillera Administrative Region (CAR), which includes the main mountain ranges of the Cordillera Central, is the only landlocked area in the Philippines. It is frequently referred to as the "Watershed Cradle of North Luzon" since it is the origin of several important rivers.</p>
+
+<p>The CAR offers a distinctive vacation experience because of its cold climate, pine-covered mountains, and indigenous culture.</p>
+
+<h3 style="margin-top: 30px;">Quick Facts</h3>
+<ul>
+<li>Provinces: Abra, Apayao, Benguet, Ifugao, Kalinga, Mt. Province.</li>
+<li>Climate: Temperate and cool year-round.</li>
+<li>Highlights: Banaue Rice Terraces, rich in mineral deposits </li>
+</ul>
+</aside>
+</section>
+</body>
+</html>
