@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Restaurants & Cuisine</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #0b2b16;
+      color: white;
+    }
+
+
+    .top {
+      background-color: #08210f;
+      text-align: center;
+      padding: 18px 0;
+      font-size: 20px;
+      font-weight: 600;
+      letter-spacing: 1px;
+    }
+
+    
+    .navbar {
+    width: 100%;
+    background-color: #08210f; 
+    position: relative;
+    z-index: 10; 
+    padding: 18px 0;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.45);
+    }
+
+    .navbar ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+    }
+
+
+ .navbar a {
+  text-decoration: none;
+  color: #dfeee4;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  transition: 0.2s ease;
+}
+
+.navbar a:hover {
+  color: #a7d3b0;
+}
+
+
+
+    
+    .bg {
+      background: url("Barn.jpg") center/cover no-repeat;
+      height: 420px;
+      position: relative;
+    }
+
+    .overlay {
+      background: rgba(0, 0, 0, 0.45);
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .overlay h1 {
+      font-size: 36px;
+      margin: 0;
+      font-weight: 700;
+      letter-spacing: 1px;
+    }
+
+    .overlay p {
+      margin-top: 8px;
+      opacity: 0.9;
+      font-size: 18px;
+    }
+
+    
+    .content-section {
+      padding: 40px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .section-title {
+      font-size: 30px;
+      margin-bottom: 30px;
+      font-weight: 600;
+    }
+
+    
+    .restaurant-card {
+      display: flex;
+      gap: 30px;
+      background-color: #123b22;
+      padding: 25px;
+      border-radius: 15px;
+      margin-bottom: 40px;
+      align-items: center;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+
+    
+    .restaurant-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.45);
+    }
+
+    .restaurant-card:nth-child(even) {
+      flex-direction: row-reverse;
+    }
+
+    .restaurant-card img {
+      width: 380px;
+      height: 260px;
+      border-radius: 12px;
+      object-fit: cover;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.4);
+    }
+
+    .restaurant-info h2 {
+      margin: 0 0 12px 0;
+      font-size: 26px;
+      font-weight: 600;
+    }
+
+    .restaurant-info p {
+      line-height: 1.6;
+      text-align: justify;
+    }
+
+    .restaurant-info .details {
+      margin-top: 12px;
+      opacity: 0.9;
+      font-size: 15px;
+    }
+
+    
+    @media (max-width: 900px) {
+      .navbar ul {
+        gap: 25px;
+      }
+
+      .navbar a {
+        font-size: 18px;
+      }
+
+      .restaurant-card,
+      .restaurant-card:nth-child(even) {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .restaurant-card img {
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    
+    @media (max-width: 480px) {
+      .navbar {
+        padding: 14px 0;
+      }
+
+      .navbar ul {
+        flex-wrap: wrap;
+        gap: 15px;
+      }
+
+      .navbar a {
+        font-size: 16px;
+      }
+
+      .restaurant-card {
+        padding: 18px;
+      }
+
+      .restaurant-card img {
+        border-radius: 10px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="top">Cordillera Administrative Region</div>
+
+  
+<header class="bg">
+  <div class="overlay">
+    <h1>RESTAURANTS & CUISINE</h1>
+    <p>Discover the best flavors of the Cordilleras.</p>
+  </div>
+</header>
+
+<nav class="navbar">
+  <ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Accomodations</a></li>
+    <li><a href="#">Cuisine</a></li>
+    <li><a href="#">Locations</a></li>
+    <li><a href="#">About us</a></li>
+  </ul>
+</nav>
+
+  <section class="content-section">
+
+    <h2 class="section-title">Featured Restaurants</h2>
+
+    <div class="restaurant-card">
+      <img src="CANTO2.jpg" alt="Canto">
+      <div class="restaurant-info">
+        <h2>Canto Bogchi Joint</h2>
+        <p>Located just across from Burnham park, Canto has become one of the most popular homegrown restaurants in the city of pines. They are known for blending classic American comfort food with local flavors. It's ambiance, the clean white interior with large glass panels, provides a pleasant dining experience with the view of the bustling Kisad road.</p>
+        <p class="details"><strong>Recommended:</strong> Lomo Ribs, Ceviche, Garlic shrimp pizza 
+        <br><strong>Location:</strong> 32 Kisad Rd, Baguio, 2600 Benguet</p>
+      </div>
+    </div>
+
+    <div class="restaurant-card">
+      <img src="Farmer.jpg" alt="Farmer’s Daughter">
+      <div class="restaurant-info">
+        <h2>Farmer's Daughter Restaurant</h2>
+        <p>Tradition is a core value of Farmer's Daughter restaurant. It offers authentic Cordilleran dishes with each meal being prepared using indigenous techniques and locally sourced produce. The rustic ambiance definitely adds to the cultural experience.</p>
+        <p class="details"><strong>Recommended:</strong> Pinuneg, Etag, Pinikpikan  
+        <br><strong>Location:</strong> CHHG+XHP Tam-awan Village, Long Long Benguet Rd, Baguio, 2600 Benguet</p>
+      </div>
+    </div>
+
+    <div class="restaurant-card">
+      <img src="Yoghurt.jpg" alt="Yoghurt House Sagada">
+      <div class="restaurant-info">
+        <h2>Yoghurt House</h2>
+        <p>Yoghurt House in Sagada is a cozy café known for its warm ambiance, mountain views, and homemade yogurt served in delicious sweet and savory ways. Perfect for breakfast or a relaxing "merienda"</p>
+        <p class="details"><strong>Recommended:</strong> Homemade Yogurt, Beef Meals, Pasta  
+        <br><strong>Location:</strong> 3WJ2+Q2M, South Rd, Sagada, 2619 Mountain Province</p>
+      </div>
+    </div>
+
+    <div class="restaurant-card">
+      <img src="Gaia.jpg" alt="Gaia Cafe">
+      <div class="restaurant-info">
+        <h2>Gaia Cafe</h2>
+        <p>Gaia Café & Crafts is a cozy, eco-friendly coffee shop that sits atop an overlooking view of the stunning Sagada terraces. Cozy wood accents inside, comfort vegetarian food, and locally brewed coffee make it a haven in the mountains for unwinding and enjoying the scenery outside. Its interior is also quite artsy, making the stop charming for both good food and local arts.</p>
+        <p class="details"><strong>Recommended:</strong> Vegetarian Adobo, Freshly Brewed Coffee, Pesto Pasta  
+        <br><strong>Location:</strong> 3WC2+49P, South Rd, Sagada, 2619 Mountain Province</p>
+      </div>
+    </div>
+
+    <div class="restaurant-card">
+      <img src="Josephs.jpg" alt="Joseph's">
+      <div class="restaurant-info">
+        <h2>Joseph's</h2>
+        <p>The Joseph's dining experience takes place in the infamous Laperal white house. It's solid wood walls and ceilings combined with custom dining tables make it the ideal setting for an upscale experience. Their menu consists of continental cuisine with emphasis on French cuisine.</p>
+        <p class="details"><strong>Recommended:</strong> Joseph's Signature, Fillet Mignon, Salmon Tartare 
+        <br><strong>Location:</strong> Laperal White House, 14 Leonard Wood Rd, Baguio, 2600 Benguet</p>
+      </div>
+    </div>
+
+  </section>
+</body>
+</html>

@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Hotels & Accommodations</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #0b2b16;
+      color: white;
+    }
+
+    .top {
+      background-color: #08210f;
+      text-align: center;
+      padding: 18px 0;
+      font-size: 20px;
+      letter-spacing: 1px;
+      font-weight: 600;
+    }
+
+    .bg {
+      background: url("Manor.jpg") center/cover no-repeat;
+      height: 420px;
+      position: relative;
+    }
+
+    .overlay {
+      background: rgba(0, 0, 0, 0.45);
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 0 20px;
+    }
+
+    .overlay h1 {
+      font-size: 36px;
+      font-weight: 700;
+      margin: 0;
+      letter-spacing: 1px;
+    }
+
+    .overlay p {
+      margin-top: 10px;
+      font-size: 18px;
+      font-weight: 300;
+      opacity: 0.9;
+    }
+
+    .navbar {
+  width: 100%;
+  background-color: #08210f;
+  padding: 18px 0;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.45);
+}
+
+.navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.navbar li {
+  display: inline-block;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #dfeee4;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  transition: 0.2s ease;
+}
+
+.navbar a:hover {
+  color: #a7d3b0;
+}
+
+    .content-section {
+      padding: 40px;
+      max-width: 1200px;
+      margin: 0 auto;
+      color: #dfeee4;
+    }
+
+    .section-title {
+      font-size: 30px;
+      margin-bottom: 25px;
+    }
+
+    .hotel-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 30px;
+    }
+
+    .hotel-box {
+      background-color: #123b22;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+      transition: 0.2s ease;
+    }
+
+    .hotel-box:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 6px 16px rgba(0,0,0,0.45);
+    }
+
+    .hotel-box img {
+      width: 100%;
+      height: 350px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-bottom: 12px;
+    }
+
+    .hotel-info h2 {
+      font-size: 24px;
+      margin: 10px 0;
+    }
+
+    .hotel-info p {
+      line-height: 1.6;
+      text-align: justify;
+    }
+
+    @media (max-width: 900px) {
+      .hotel-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .overlay h1 {
+        font-size: 30px;
+      }
+
+      .overlay p {
+        font-size: 16px;
+      }
+
+      .content-section {
+        padding: 25px;
+      }
+      .navbar ul {
+        gap: 25px;
+      }
+
+      .navbar a {
+        font-size: 18px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .overlay h1 {
+        font-size: 26px;
+      }
+
+      .overlay p {
+        font-size: 14px;
+      }
+
+      .section-title {
+        font-size: 24px;
+      }
+
+      .hotel-box {
+        padding: 15px;
+      }
+
+      .hotel-info h2 {
+        font-size: 20px;
+      }
+
+      .hotel-info p {
+        font-size: 14px;
+      }
+        .navbar {
+        padding: 14px 0;
+      }
+
+      .navbar ul {
+        flex-wrap: wrap;
+        gap: 15px;
+      }
+
+  .navbar a {
+    font-size: 16px;
+  }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="top">Cordillera Administrative Region</div>
+
+    <div class="bg">
+      <div class="overlay">
+        <h1>HOTELS & ACCOMMODATIONS</h1>
+        <p>The perfect places for your stay.</p>
+      </div>
+    </div>
+  </header>
+
+
+  <nav class="navbar">
+  <ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Accomodations</a></li>
+    <li><a href="#">Cuisine</a></li>
+    <li><a href="#">Locations</a></li>
+    <li><a href="#">About us</a></li>
+  </ul>
+</nav>
+
+
+  <section class="content-section">
+    <h2 class="section-title">Featured Stays</h2>
+
+<div class="hotel-grid">
+  <div class="hotel-box">
+  <img src="LEMONET.jpg" alt="Le Monet Hotel">
+  <div class="hotel-info">
+    <h2>Le Monet Hotel</h2>
+    <p>Le Monet Hotel is located within Camp John Hay and is an addition to the beauty of the summer capital of the Philippines by offering vibrant surroundings, stylish interior, and excellent service. Nature is within reach with visits to the butterfly sanctuary, eco-trail, horseback riding routes, and picnic spaces. The guest rooms at this hotel are spacious with state-of-the-art bathrooms and private balconies that allow a view of pine trees and other beautiful vegetation.</p>
+    <p><strong>Price:</strong> ₱6,352</p>
+    <p><strong>Location:</strong> Ordonio Dr, Camp John Hay, Baguio, 2600 Benguet</p>
+  </div>
+</div>
+
+<div class="hotel-box">
+  <img src="AZALEA.jpg" alt="Azalea Hotels & Residences">
+  <div class="hotel-info">
+    <h2>Azalea Hotels & Residences</h2>
+    <p>Right in the heart of Baguio, Azalea offers the utmost combination of comfort, style, and Filipino hospitality—one that would be your perfect retreat regardless of the season. The rooms are fully serviced with contemporary amenities, including full kitchens, so that everything needed for a comfortable stay is always available. Baguio's historic spots, bustling markets, and relaxing scenery are only minutes away.</p>
+    <p><strong>Price:</strong> ₱3,221</p>
+    <p><strong>Location:</strong> 7, 2600 Leonard Wood Loop, Brgy, Baguio, 2600 Benguet</p>
+  </div>
+</div>
+
+<div class="hotel-box">
+  <img src="TheShire.jpg" alt="The Shire of Sagada">
+  <div class="hotel-info">
+    <h2>The Shire of Sagada</h2>
+    <p>The Shire of Sagada is a charming Hobbit-themed hotel that is clean, nicely decorated, and known for its friendly, attentive staff. Its comfortable rooms, hot showers, and peaceful surroundings make it an ideal base to explore attractions such as the Hanging Coffins, caves, and nearby villages. The hotel also features a Hobbit-themed café serving yogurt, rice meals, and more.</p>
+    <p><strong>Price:</strong> ₱6,256</p>
+    <p><strong>Location:</strong> Unnamed Road, Sagada, Mountain Province</p>
+  </div>
+</div>
+
+<div class="hotel-box">
+  <img src="BANAUE.jpg" alt="Banaue Glass Cabins">
+  <div class="hotel-info">
+    <h2>Banaue Glass Cabins</h2>
+    <p>The Banaue Glass Cabins are charming, fully equipped cabins nestled in the serene mountains of Banaue. Surrounded by lush gardens and greenery, they provide a peaceful escape with breathtaking views from their stunning glass-paneled design. Their proximity to the Banaue Rice Terraces makes them perfect for travelers seeking nature and tranquility.</p>
+    <p><strong>Price:</strong> ₱4,363</p>
+    <p><strong>Location:</strong> W356+44W Tam-an, Banaue, Ifugao</p>
+  </div>
+</div>
+
+<div class="hotel-box">
+  <img src="VENUS.png" alt="Venus Parkview Hotel">
+  <div class="hotel-info">
+    <h2>Venus Parkview Hotel</h2>
+    <p>Venus Parkview Hotel, located steps away from Burnham Park, offers guests a comfortable and convenient stay. Guests can enjoy a full breakfast buffet, relaxing massages, and guided tour access. The air-conditioned rooms include spacious balconies, clean bathrooms, and complimentary toiletries. Nearby attractions include SM Baguio, Wright Park, and the Central Market.</p>
+    <p><strong>Price:</strong> ₱4,029</p>
+    <p><strong>Location:</strong> #19 Kisad Road, Legarda Rd, Baguio, 2600 Benguet</p>
+  </div>
+</div>
+
+<div class="hotel-box">
+  <img src="BPOD.jpg" alt="Bpod Baguio">
+  <div class="hotel-info">
+    <h2>Bpod Baguio</h2>
+    <p>BPOD Baguio offers a cozy boutique home-stay experience close to the city’s top attractions. Each unit features a warm fireplace, tasteful interior designs, and complete bathroom amenities. Minutes away from The Mansion, Wright Park, and the Botanical Garden, this retreat blends home-like comfort with the advantages of a central location.</p>
+    <p><strong>Price:</strong> ₱5,543</p>
+    <p><strong>Location:</strong> 3 J. Felipe St, Baguio, 2600 Benguet</p>
+  </div>
+</div>
+</div>
+</section>
+</body>
+</html>
