@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8" />
+  <title>About Us - Cordilleras Travel</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;800&display=swap');
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body, html {
+      margin: 0;
+      padding: 0;
+      background-color: #071E07;
+      font-family: 'Montserrat', sans-serif;
+      color: white;
+      min-height: 100vh;
+      scroll-behavior: smooth;
+    }
+
+    nav.navi {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 60px;
+      background-color: #071E07;
+      padding: 20px 0;
+      flex-wrap: wrap;
+      border-bottom: 3px solid #C8E6C9;
+      position: sticky;
+      top: 0;
+      z-index: 999;
+    }
+
+    nav.navi a {
+      font-size: 40px;
+      color: white;
+      text-decoration: none;
+      padding: 10px 20px;
+      transition: color 0.3s ease, transform 0.3s ease;
+      white-space: nowrap;
+      font-weight: 600;
+    }
+
+    nav.navi a:hover {
+      color: #C8E6C9;
+      transform: translateY(-3px);
+    }
+
+    nav.navi a:active {
+      color: #A5D6A7;
+    }
+
+    .page-container {
+      max-width: 1100px;
+      margin: 50px auto 80px auto;
+      padding: 0 20px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .decor-bar-top,
+    .decor-bar-bottom {
+      width: 60px;
+      height: 8px;
+      background: linear-gradient(90deg, #A5D6A7, #071E07);
+      border-radius: 4px;
+      margin: 40px auto;
+      opacity: 0.7;
+    }
+
+    h1 {
+      font-weight: 800;
+      font-size: 3.5rem;
+      text-align: center;
+      margin-bottom: 30px;
+      letter-spacing: 4px;
+      color: #C8E6C9;
+      text-shadow: 0 0 15px rgba(0,0,0,0.6);
+    }
+
+    .intro {
+      max-width: 700px;
+      margin: 0 auto 50px auto;
+      font-size: 1.25rem;
+      line-height: 1.7;
+      text-align: center;
+      color: #e0e0e0;
+    }
+
+    .references {
+      max-width: 700px;
+      margin: 0 auto 80px auto;
+      font-size: 1rem;
+      line-height: 1.6;
+      color: #C8E6C9;
+      padding: 0 20px;
+    }
+
+    .references h2 {
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 20px;
+      text-align: center;
+      color: #A5D6A7;
+      letter-spacing: 2px;
+    }
+
+    .references ul {
+      list-style: inside disc;
+      padding-left: 0;
+    }
+
+    .references ul li {
+      margin-bottom: 10px;
+    }
+
+    .bg-shape-top-right,
+    .bg-shape-bottom-left {
+      position: fixed;
+      width: 200px;
+      height: 200px;
+      background: #A5D6A7;
+      opacity: 0.05;
+      border-radius: 50%;
+      z-index: 0;
+      pointer-events: none;
+    }
+
+    .bg-shape-top-right {
+      top: 10px;
+      right: 10px;
+    }
+
+    .bg-shape-bottom-left {
+      bottom: 10px;
+      left: 10px;
+    }
+
+    @media (max-width: 900px) {
+      h1 {
+        font-size: 2.8rem;
+      }
+
+      .intro {
+        font-size: 1.1rem;
+      }
+
+      nav.navi a {
+        font-size: 28px;
+        margin: 10px;
+      }
+
+      .references h2 {
+        font-size: 1.6rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 2rem;
+      }
+
+      .intro {
+        font-size: 1rem;
+        margin-bottom: 30px;
+      }
+
+      nav.navi a {
+        font-size: 22px;
+        margin: 8px;
+      }
+
+      .references {
+        font-size: 0.9rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navi">
+    <a href="#">Home</a>
+    <a href="#">Cuisine</a>
+    <a href="#">Locations</a>
+    <a href="#">About us</a>
+  </nav>
+
+  <div class="page-container">
+    <div class="decor-bar-top"></div>
+
+    <h1>About Us</h1>
+    <p class="intro">
+      We are a passionate group of three travelers who love exploring the world and sharing unforgettable adventures. Our goal is to inspire you to discover new places, cultures, and experiences that will stay with you forever.
+    </p>
+
+    <div class="decor-bar-bottom"></div>
+  </div>
+
+  <section class="references">
+    <h2>References</h2>
+    <ul>
+      <li>https://lemonethotel.ph/home</li>
+      <li>https://res.klook.com/klook-hotel/image/upload/travelapi/6000000/5070000/5067300/5067282/f8b31231_z.jpg</li>
+      <li>https://azaleabaguio.com/</li>
+      <li>https://cf.bstatic.com/xdata/images/hotel/max1024x768/32026685.jpg?k=90d998509bf8162c64f6a630841fdcaccf40e4c55e236463cba8e226fabfc1a2&o=</li>
+      <li>https://www.tripadvisor.com.ph/Hotel_Review-g304053-d25214126-Reviews-The_Shire_of_Sagada-Sagada_Mountain_Province_Cordillera_Region_Luzon.html</li>
+    <li>https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2b/1d/4f/5b/capti_r.jpg?w=900&h=500&s=1</li>
+    <li>https://www.booking.com/hotel/ph/banaue-glass-cabins.html</li>
+    <li>https://q-xx.bstatic.com/xdata/images/hotel/max500/652582075.jpg?k=655da37a38a8ff29e09d8e2f014b8f350ca55b0d0cc9af4cb10f3c98091f72b4&o=</li>
+    <li>https://lh3.googleusercontent.com/p/AF1QipPgDnfbdvcElM6-BB8E43TJHHe2vvL-tVjWLKK7=s680-w680-h510</li>
+    <li>https://www.agoda.com/venus-parkview-hotel/hotel/baguio-ph.html?cid=1844104&ds=R6sd3Yjm0xxb9tff</li>
+
+    <li>https://pix8.agoda.net/hotelImages/31053115/-1/3870188b5b4b10d47ed2a5d33f4413f2.jpg?ce=0&s=1024x</li>
+    <li>https://www.facebook.com/BpodBaguio/photos</li>
+    <li>https://beingjellybeans.com/2024/08/17/baguioeats-canto-bogchi-joint/</li>
+    <li>https://i0.wp.com/wheretheblog.wordpress.com/wp-content/uploads/2018/03/web-44292.jpg?fit=1200%2C800&ssl=1</li>
+    <li>https://www.zoytotheworld.com/blog/baguio-city-food-trip-farmers-daughter</li>
+    <li>https://media-cdn.tripadvisor.com/media/photo-s/03/af/18/45/yoghurt-house.jpg</li>
+    <li>https://www.kingtolentino.com/blog/yoghurt-house</li>
+    <li>https://www.tripadvisor.com.ph/Restaurant_Review-g304053-d3512205-Reviews-Gaia_Cafe_Crafts-Sagada_Mountain_Province_Cordillera_Region_Luzon.html</li>
+    <li>https://c8.staticflickr.com/6/5574/30147400623_347be75e5d_b.jpg</li>
+    <li>https://josephsbaguio.com/</li>
+    <li>https://www.instagram.com/p/Cz0wewkv3kd/</li>
+    <li>https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Ph_fil_car.png/640px-Ph_fil_car.png</li>
+    <li>https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0b/bc/ec/3b/banaue-rice-terraces.jpg?w=1200&h=700&s=1</li>
+    </ul>
+  </section>
+
+  <div class="bg-shape-top-right"></div>
+  <div class="bg-shape-bottom-left"></div>
+
+</body>
+</html>
