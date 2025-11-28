@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YES</title>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;800&display=swap');
+
+    html, body {
+      margin: 0;
+      padding: 0;
+      background-color: #071E07;
+      font-family: 'Montserrat', sans-serif;
+      color: white;
+    }
+
+    .colorstripontop {
+      position: relative;
+      width: 100%;
+      height: 85vh;
+      min-height: 500px;
+      overflow: hidden;
+    }
+
+    .colorstripontop img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      filter: brightness(0.55);
+    }
+
+    .hero-text {
+      position: absolute;
+      top: 38%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      font-size: clamp(2rem, 6vw, 5rem);
+      font-weight: 800;
+      letter-spacing: 6px;
+      opacity: 0.75;
+      width: 90%;
+      max-width: 1200px;
+    }
+
+    .hero-slogan {
+      position: absolute;
+      top: 55%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      font-size: clamp(1rem, 3vw, 2rem);
+      font-weight: 500;
+      opacity: 0.85;
+      width: 90%;
+      max-width: 800px;
+    }
+
+    .blackribbon {
+      height: 6px;
+      width: 100%;
+      background-color: #071E07;
+    }
+
+    #menu-toggle {
+      display: none;
+    }
+
+    .hamburger {
+      display: none;
+      font-size: 42px;
+      color: white;
+      cursor: pointer;
+      padding: 15px 20px;
+    }
+
+    .navi {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 40px;
+      padding: 20px 10px;
+      flex-wrap: wrap;
+      text-align: center;
+    }
+
+    .navi a {
+      font-size: clamp(1.2rem, 3vw, 2rem);
+      color: white;
+      text-decoration: none;
+      padding: 10px 15px;
+      transition: 0.3s ease;
+    }
+
+    .navi a:hover {
+      color: #C8E6C9;
+      transform: translateY(-4px);
+    }
+
+    .content-section {
+      max-width: 1100px;
+      margin: 50px auto;
+      padding: 40px 30px;
+      background-color: rgba(200, 230, 201, 0.15);
+      border-radius: 12px;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      gap: 60px;
+      flex-wrap: wrap;
+    }
+
+    .context {
+      font-size: 20px;
+      line-height: 1.7;
+      text-align: center;
+      max-width: 600px;
+    }
+
+    .map-container {
+      max-width: 350px;
+      width: 100%;
+    }
+
+    .map-container img {
+      width: 100%;
+      border-radius: 12px;
+      display: block;
+    }
+
+    .footer-section {
+      max-width: 1100px;
+      margin: 0 auto 50px;
+      background-color: rgba(10, 50, 10, 0.85);
+      padding: 25px;
+      border-radius: 12px;
+      text-align: center;
+      font-size: clamp(1rem, 2.5vw, 1.5rem);
+      color: #C8E6C9;
+    }
+
+    @media (max-width: 900px) {
+      .hamburger {
+        display: block;
+      }
+
+      .navi {
+        display: none;
+        flex-direction: column;
+        gap: 25px;
+        padding-bottom: 25px;
+      }
+
+      #menu-toggle:checked + .hamburger + .navi {
+        display: flex;
+      }
+
+      .content-section {
+        flex-direction: column;
+        gap: 40px;
+      }
+
+      .map-container {
+        width: 80%;
+      }
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <div class="colorstripontop">
+    <img src="https://raw.githubusercontent.com/qiangue/qiangue.github.io/refs/heads/main/photo.jpg" alt="Cordilleras mountain view">
+    <div class="hero-text">WELCOME TO THE CORDILLERAS</div>
+    <div class="hero-slogan">a paradise carved into the mountains</div>
+  </div>
+
+  <div class="blackribbon"></div>
+
+  <input type="checkbox" id="menu-toggle">
+  <label class="hamburger" for="menu-toggle">☰</label>
+
+  <nav class="navi">
+    <a href="#">Accommodations</a>
+    <a href="#">Cuisine</a>
+    <a href="#">Locations</a>
+    <a href="#">About us</a>
+  </nav>
+
+  <section class="content-section">
+    <p class="context">
+      The Cordilleras, located in the northern highlands of the Philippines, are known for their breathtaking mountain ranges, rich indigenous culture, and world-renowned rice terraces carved into the mountainsides. This region is home to diverse tribes, cool climates, and landscapes that blend natural beauty with centuries of tradition.
+    </p>
+
+    <div class="map-container">
+      <img src="https://raw.githubusercontent.com/qiangue/qiangue.github.io/refs/heads/main/mapcar.jpg" alt="Map of the Cordillera region">
+    </div>
+  </section>
+
+  <section class="footer-section">
+    That’s why we’re here to give you the best vacation plan tailored just for you.
+  </section>
+
+</body>
+</html>
